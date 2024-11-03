@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>random_poke</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h1>Clique no botão para buscar um pokemon aleatorio</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col ion-col class="ion-text-center">
+        <ion-button (click)="gerarPokemon()">Gerar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col  size-xs="12" size-sm="4" size-md="4" offset-xs="0" offset-sm="4"  offset-md="4">
+        <ion-card *ngIf="status">
+          <ion-row>
+            <ion-col size="4" offset="4"><ion-img alt="Silhouette of mountains" src="{{foto}}" /></ion-col>
+          </ion-row>
+          
+          <ion-card-header>
+            <ion-row>
+              
+              <ion-col size="8" offset="4">
+                <ion-card-subtitle class="ion-text-nowrap">Nome</ion-card-subtitle>
+                <ion-card-title class="ion-text-nowrap">{{nome}}</ion-card-title>
+              </ion-col>
+              <ion-col size-xs="4">
+                <ion-card-subtitle class="ion-text-nowrap">Numero</ion-card-subtitle>
+                <ion-card-title class="ion-text-nowrap">#{{id}}</ion-card-title>
+              </ion-col>
+              <ion-col size-xs="4">
+                <ion-card-subtitle class="ion-text-nowrap">Peso</ion-card-subtitle>
+                <ion-card-title class="ion-text-nowrap">{{peso}}</ion-card-title>
+              </ion-col>
+              <ion-col size-xs="4">
+                <ion-card-subtitle class="ion-text-nowrap">Altura</ion-card-subtitle>
+                <ion-card-title class="ion-text-nowrap">{{altura}}</ion-card-title>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+          
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <ion-card-subtitle>Tipos</ion-card-subtitle>
+              <ion-card-title *ngFor="let info_tipos of tipos">{{info_tipos.type.name}}</ion-card-title>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-accordion-group>
+                  <ion-accordion value="first">
+                    <ion-item slot="header" color="light">
+                      <ion-label>Movimentos</ion-label>
+                    </ion-item>
+                    <div slot="content" *ngFor="let info_movies of movimentos.slice(0,4)">
+                      <ion-item>
+                        <ion-label>{{info_movies.move.name}}</ion-label>
+                      </ion-item>
+                    </div>
+                  </ion-accordion>
+                  </ion-accordion-group>
+              </ion-col>
+            </ion-row>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+</ion-content>
