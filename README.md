@@ -86,11 +86,11 @@ Após iniciar a aplicação, o usuário verá uma página com um botão que perm
 
 Aqui está uma captura de tela mostrando como a interface se parece ao gerar um Pokémon aleatório:
 
-![Exemplo de interface](https://via.placeholder.com/800x400.png)  
+![Exemplo de interface](https://prnt.sc/SrOlzW3NiI3T)  
 *Captura de tela: Exibindo um Pokémon aleatório e seus dados.*
 
 
 ## Contato
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario).  
-Entre em contato: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+Desenvolvido por Thiago Santos(https://github.com/ThsSantos).  
+Entre em contato: https://www.linkedin.com/in/thiago-santos-54a759212/
