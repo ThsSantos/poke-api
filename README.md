@@ -28,7 +28,6 @@ Este projeto é um aplicativo de exemplo criado com **Ionic** e **Angular**, que
 - **src/app/**: Contém os componentes e serviços da aplicação.
   - **random-poke.page.ts**: Página principal onde o Pokémon aleatório é exibido.
   - **pokeapi.service.ts**: Serviço responsável por consumir a API e retornar os dados do Pokémon.
-- **assets/**: Diretório de imagens e outros recursos estáticos.
 
 ## Pré-requisitos
 
@@ -86,7 +85,7 @@ Após iniciar a aplicação, o usuário verá uma página com um botão que perm
 
 Aqui está uma captura de tela mostrando como a interface se parece ao gerar um Pokémon aleatório:
 
-![Exemplo de interface](https://prnt.sc/SrOlzW3NiI3T)  
+![Exemplo de interface](https://prnt.sc/fW9PfpYGgB8q)  
 *Captura de tela: Exibindo um Pokémon aleatório e seus dados.*
 
 
