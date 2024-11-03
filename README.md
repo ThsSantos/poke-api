@@ -88,6 +88,9 @@ Aqui está uma captura de tela mostrando como a interface se parece ao gerar um 
 ![Screenshot_1](https://github.com/user-attachments/assets/9ce1633b-9fba-41e2-80a9-96bd6c6f0eaa)  
 *Captura de tela: Exibindo um Pokémon aleatório e seus dados.*
 
+## Link para o pdf da aula
+
+https://drive.google.com/file/d/101h-78EE2Pp5StFOnje2Y4UimpgSGBPh/view?usp=sharing
 
 ## Contato
 
